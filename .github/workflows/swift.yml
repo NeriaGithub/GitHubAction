@@ -12,4 +12,4 @@ jobs:
     - name: Force Xcode 12
       run: xcodebuild -project 'GitHubAction.xcodeproj' -scheme 'GitHubAction' -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest' 
     - name: GitHubAction
-      run: xcodebuild -project 'GitHubAction.xcodeproj' -scheme 'GitHubAction' -destination 'generic/platform=iOS' --configuration "Ad Hoc" archive
+      run: xcodebuild -project 'GitHubAction.xcodeproj' -scheme 'GitHubAction' -destination 'generic/platform=iOS' -configuration "Ad Hoc" archive
